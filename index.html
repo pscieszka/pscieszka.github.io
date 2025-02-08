@@ -15,9 +15,19 @@
     <h1>Moje Portfolio</h1>
     <div class="gallery" id="gallery"></div>
 
+    <!-- Osadzony GIF z Tenora -->
+    <div class="tenor-gif-embed" data-postid="23680990" data-share-method="host" 
+        data-aspect-ratio="1.33891" data-width="100%">
+        <a href="https://tenor.com/view/side-eye-dog-suspicious-look-suspicious-doubt-dog-doubt-gif-23680990">
+            Side Eye Dog Suspicious Look GIF
+        </a> from 
+        <a href="https://tenor.com/search/side+eye+dog-gifs">Side Eye Dog GIFs</a>
+    </div> 
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
     <script>
         async function loadImages() {
-            const response = await fetch('images/');  // Pobiera listę plików
+            const response = await fetch('images/');
             const text = await response.text();
             const parser = new DOMParser();
             const doc = parser.parseFromString(text, 'text/html');
